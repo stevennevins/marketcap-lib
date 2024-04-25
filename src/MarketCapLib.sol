@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.7.0;
 
-import "forge-std/interfaces/IERC20.sol";
 import "@uniswap/v3-periphery/libraries/OracleLibrary.sol";
 import "@uniswap/v3-periphery/libraries/PoolAddress.sol";
+import "forge-std/interfaces/IERC20.sol";
 
-contract MarketCapLibrary {
+library MarketCapLib {
     address private constant FACTORY = 0x1F98431c8aD98523631AE4a59f267346ea31F984;
     address private constant WETH = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
     uint32 private constant PERIOD = 7 days;
